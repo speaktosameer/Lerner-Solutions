@@ -7,7 +7,7 @@ const title = "Lernen Solution's Courses";
 
 const courseList = [
     {
-        imgUrl: 'assets/images/course/13.jpg',
+        imgUrl: 'assets/images/course/27.png',
         imgAlt: 'course rajibraj91 rajibraj',
         courseName: 'Bussiness',
         coursePrice: 'Rs 1,00,000',
@@ -17,7 +17,7 @@ const courseList = [
         btnText: 'Join Now',
     },
     {
-        imgUrl: 'assets/images/course/14.jpg',
+        imgUrl: 'assets/images/course/28.png',
         imgAlt: 'course rajibraj91 rajibraj',
         courseName: 'Design',
         coursePrice: 'Rs 40,000',
@@ -27,7 +27,7 @@ const courseList = [
         btnText: 'Join Now',
     },
     {
-        imgUrl: 'assets/images/course/15.jpg',
+        imgUrl: 'assets/images/course/29.png',
         imgAlt: 'course rajibraj91 rajibraj',
         courseName: 'Design',
         coursePrice: 'Rs 40,000',

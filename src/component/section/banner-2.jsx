@@ -3,7 +3,7 @@
 
 const subTitle = "Online education";
 const title = <h2 className="title"><span className="d-lg-block">Build Skills With</span> Experts Any Time <span className="d-lg-block">Anywhere</span></h2>;
-const desc =<p> Free online courses from the world’s Leading experts. <br /> Join us today.</p>;
+const desc = <p> Free online courses from the world’s Leading experts. <br /> Join us today.</p>;
 
 
 const catagoryList = [
@@ -32,8 +32,19 @@ const BannerTwo = () => {
             <div className="container">
                 <div className="section-wrapper">
                     <div className="row align-items-center flex-row-reverse">
+
+                        <div className="col-xxl-7 col-xl-6">
+                            <div className="thumb-part">
+                                <div className="banner-thumb text-center">
+                                    <img src="assets/images/banner/02.png" alt="img" />
+                                </div>
+                                <div className="abs-thumb d-none d-xxl-block">
+                                    <img src="assets/images/banner/03.png" alt="img" />
+                                </div>
+                            </div>
+                        </div>
                         <div className="col-xxl-5 col-xl-6 col-lg-10 me-auto">
-                            <div className="banner-content"> 
+                            <div className="banner-content">
                                 <h6 className="subtitle text-uppercase fw-medium">{subTitle}</h6>
                                 {title}
                                 <p className="desc">{desc}</p>
@@ -42,7 +53,7 @@ const BannerTwo = () => {
                                         <i className="icofont-search"></i>
                                     </div> */}
                                     {/* <input type="text" placeholder="Keywords of your course" /> */}
-                                    <button type="#">Join Now</button>
+                                    <button type="#">Search Course</button>
                                 </form>
                                 {/* <div className="banner-catagory d-flex flex-wrap">
                                     <p>Most Popular : </p>
@@ -54,21 +65,11 @@ const BannerTwo = () => {
                                 </div> */}
                             </div>
                         </div>
-                        <div className="col-xxl-7 col-xl-6">
-                            <div className="thumb-part">
-                                <div className="banner-thumb text-center">
-                                    <img src="assets/images/banner/02.png" alt="img" />
-                                </div>
-                                <div className="abs-thumb d-none d-xxl-block">
-                                    <img src="assets/images/banner/03.png" alt="img" />
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
     );
 }
- 
+
 export default BannerTwo;
