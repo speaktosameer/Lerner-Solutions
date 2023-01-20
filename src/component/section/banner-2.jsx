@@ -42,7 +42,7 @@ const BannerTwo = () => {
                                         <i className="icofont-search"></i>
                                     </div> */}
                                     {/* <input type="text" placeholder="Keywords of your course" /> */}
-                                    <button type="#">Search Course</button>
+                                    <button type="#">Join Now</button>
                                 </form>
                                 {/* <div className="banner-catagory d-flex flex-wrap">
                                     <p>Most Popular : </p>

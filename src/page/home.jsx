@@ -14,12 +14,12 @@ const Home = () => {
         <Fragment>
             <HeaderTwo />
             <BannerTwo />
-            <AboutTwo />
             <CourseThree />
-            {/* <CategoryTwo /> */}
             <Student />
             <Instructor />
+            {/* <CategoryTwo /> */}
             <Skill />
+            <AboutTwo />
             {/* <AchievementTwo /> */}
             {/* <Blog /> */}
             <Footer />
