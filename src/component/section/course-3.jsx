@@ -1,121 +1,149 @@
 
-import { Autoplay, Navigation } from "swiper";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from "react-router-dom";
+import Rating from "../sidebar/rating";
 
-const subTitle = "Don’t Miss";
-const title = "Lernen Solution's Courses";
+const subTitle = "Featured Courses";
+const title = "Pick A Course To Get Started";
+
 
 const courseList = [
     {
         imgUrl: 'assets/images/course/27.png',
-        imgAlt: 'course rajibraj91 rajibraj',
-        courseName: 'Bussiness',
-        coursePrice: 'Rs 1,00,000',
-        courseTitle: 'Business Analyst Training',
-        user: '2',
-        commentCount: '23',
+        imgAlt: 'course vereda vereda',
+        price: '$30',
+        cate: 'Bussiness',
+        reviewCount: '03 reviews',
+        title: 'Bussiness Anlyst Training',
+        totalLeson: '18x Lesson',
+        schdule: 'Online Class',
+        authorImgUrl: 'assets/images/course/author/01.jpg',
+        authorImgAlt: 'course author vereda vereda',
+        authorName: 'Enquiry Now',
         btnText: 'Join Now',
+        // coursedtl: '/course-single',
     },
     {
         imgUrl: 'assets/images/course/28.png',
-        imgAlt: 'course rajibraj91 rajibraj',
-        courseName: 'Design',
-        coursePrice: 'Rs 40,000',
-        courseTitle: 'Service Now Advance',
-        user: '7',
-        commentCount: '23',
+        imgAlt: 'course vereda vereda',
+        price: '$30',
+        cate: 'Design',
+        reviewCount: '03 reviews',
+        title: 'Service Now Advance',
+        totalLeson: '18x Lesson',
+        schdule: 'Online Class',
+        authorImgUrl: 'assets/images/course/author/03.jpg',
+        authorImgAlt: 'course author vereda vereda',
+        authorName: 'Enquiry Now',
         btnText: 'Join Now',
+        // coursedtl: '/course-single1',
     },
     {
         imgUrl: 'assets/images/course/29.png',
-        imgAlt: 'course rajibraj91 rajibraj',
-        courseName: 'Design',
-        coursePrice: 'Rs 40,000',
-        courseTitle: 'Service Now Fundamentals',
-        user: '72',
-        commentCount: '23',
+        imgAlt: 'course vereda vereda',
+        price: '$30',
+        cate: 'Design',
+        reviewCount: '03 reviews',
+        title: 'Service Now Fundamentals',
+        totalLeson: '18x Lesson',
+        schdule: 'Online Class',
+        authorImgUrl: 'assets/images/course/author/03.jpg',
+        authorImgAlt: 'course author vereda vereda',
+        authorName: 'Enquiry Now',
         btnText: 'Join Now',
-    },
-]
+        // coursedtl: '/course-single1',
 
+    },
+    // {
+    //     imgUrl: 'assets/images/course/04.jpg',
+    //     imgAlt: 'course vereda vereda',
+    //     price: '$30',
+    //     cate: 'Adobe XD',
+    //     reviewCount: '03 reviews',
+    //     title: 'Computer Fundamentals Basic Startup Ultricies Vitae',
+    //     totalLeson: '18x Lesson',
+    //     schdule: 'Online Class',
+    //     authorImgUrl: 'assets/images/course/author/04.jpg',
+    //     authorImgAlt: 'course author vereda vereda',
+    //     authorName: 'Zinat Zaara',
+    //     btnText: 'Read More',
+    // },
+    // {
+    //     imgUrl: 'assets/images/course/05.jpg',
+    //     imgAlt: 'course vereda vereda',
+    //     price: '$30',
+    //     cate: 'Adobe XD',
+    //     reviewCount: '03 reviews',
+    //     title: 'Boozy Halloween Drinks for the Grown Eleifend Kuismod',
+    //     totalLeson: '18x Lesson',
+    //     schdule: 'Online Class',
+    //     authorImgUrl: 'assets/images/course/author/05.jpg',
+    //     authorImgAlt: 'course author vereda vereda',
+    //     authorName: 'Himanshu ',
+    //     btnText: 'Read More',
+    // },
+    // {
+    //     imgUrl: 'assets/images/course/06.jpg',
+    //     imgAlt: 'course vereda vereda',
+    //     price: '$30',
+    //     cate: 'Adobe XD',
+    //     reviewCount: '03 reviews',
+    //     title: 'Student Want to Learn About Science And Arts',
+    //     totalLeson: '18x Lesson',
+    //     schdule: 'Online Class',
+    //     authorImgUrl: 'assets/images/course/author/06.jpg',
+    //     authorImgAlt: 'course author vereda vereda',
+    //     authorName: 'Angel Mili',
+    //     btnText: 'Read More',
+    // },
+]
 
 const CourseThree = () => {
     return (
-        <div className="course-section style-2 padding-tb">
+        <div className="course-section padding-tb section-bg">
             <div className="container">
-                <div className="section-header">
+                <div className="section-header text-center">
                     <span className="subtitle">{subTitle}</span>
                     <h2 className="title">{title}</h2>
-                    <div className="course-navigations">
-                        <div className="course-navi course-navi-next"><i className="icofont-double-left"></i></div>
-                        <div className="course-navi course-navi-prev"><i className="icofont-double-right"></i></div>
-                    </div>
                 </div>
                 <div className="section-wrapper">
-                    <div className="course-slider p-2">
-                        <div className="swiper-wrapper">
-                            <Swiper
-                                spaceBetween={20}
-                                slidesPerView={2}
-                                loop={'true'}
-                                autoplay={{
-                                    delay: 5000,
-                                    disableOnInteraction: false,
-                                }}
-                                navigation={{
-                                    prevEl: '.course-navi-prev',
-                                    nextEl: '.course-navi-next',
-                                }}
-                                modules={[Autoplay, Navigation]}
-                                breakpoints={{
-                                    0: {
-                                        width: 0,
-                                        slidesPerView: 1,
-                                    },
-                                    768: {
-                                        width: 768,
-                                        slidesPerView: 2,
-                                    },
-                                    1200: {
-                                        width: 1200,
-                                        slidesPerView: 2.85,
-                                    },
-                                }}
-                            >
-                                {courseList.map((val, i) => (
-                                    <SwiperSlide key={i}>
-                                        <div className="course-item style-3">
-                                            <div className="course-inner text-center">
-                                                <div className="course-thumb">
-                                                    <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
-                                                    <ul className="course-info lab-ul">
-                                                        <li><span className="course-name">{val.courseName}</span></li>
-                                                        <li><span className="price">{val.coursePrice}</span></li>
-                                                        <li>
-                                                            <span className="ratting">
-                                                                <i className="icofont-ui-rate-blank"></i>
-                                                                <i className="icofont-ui-rate-blank"></i>
-                                                                <i className="icofont-ui-rate-blank"></i>
-                                                                <i className="icofont-ui-rate-blank"></i>
-                                                                <i className="icofont-ui-rate-blank"></i>
-                                                            </span>
-                                                        </li>
-                                                    </ul>
+                    <div className="row g-4 justify-content-center row-cols-xl-3 row-cols-md-2 row-cols-1">
+                        {courseList.map((val, i) => (
+                            <div className="col" key={i}>
+                                <div className="course-item">
+                                    <div className="course-inner">
+                                        <div className="course-thumb">
+                                            <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
+                                        </div>
+                                        <div className="course-content">
+                                            {/* <div className="course-price">{val.price}</div> */}
+                                            <div className="course-category">
+                                                <div className="course-cate">
+                                                    <a href="#">{val.cate}</a>
                                                 </div>
-                                                <div className="course-content">
-                                                    <a href="#"><h4>{val.courseTitle}</h4></a>
-                                                    <div className="course-details">
-                                                        <div className="couse-count"><i className="icofont-users-alt-3"></i> {val.user}</div>
-                                                        <div className="couse-topic"><i className="icofont-wall-clock"></i> {val.commentCount}</div>
-                                                    </div>
-                                                    <a href="#" className="lab-btn"><span>{val.btnText}</span></a>
+                                                {/* <div className="course-reiew">
+                                                    <Rating />
+                                                    <span className="ratting-count"> {val.reviewCount}</span>
+                                                </div> */}
+                                            </div>
+                                            <Link to="#"><h4>{val.title}</h4></Link>
+                                            {/* <div className="course-details">
+                                                <div className="couse-count"><i className="icofont-video-alt"></i> {val.totalLeson}</div>
+                                                <div className="couse-topic"><i className="icofont-signal"></i> {val.schdule}</div>
+                                            </div> */}
+                                            <div className="course-footer">
+                                                <div className="course-author">
+                                                    {/* <img src={`${val.authorImgUrl}`} alt={`${val.authorImgAlt}`} /> */}
+                                                    <Link to="#" className="ca-name">{val.authorName}</Link>
+                                                </div>
+                                                <div className="course-btn">
+                                                    <Link to="#" className="lab-btn-text">{val.btnText} <i className="icofont-external-link"></i></Link>
                                                 </div>
                                             </div>
                                         </div>
-                                    </SwiperSlide>
-                                ))}
-                            </Swiper>
-                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
